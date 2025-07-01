@@ -24,11 +24,19 @@
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
-.links {
+.links-desktop {
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
+}
+
+.links-mobile {
+  display: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .external-link {
@@ -60,5 +68,9 @@
   .logo {
     filter: grayscale(0%);
     width: 300px;
+  }
+
+  .links-desktop {
+    display: none;
   }
 }

@@ -35,7 +35,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="links">
+        <div className="links-desktop">
           <a
             href="https://www.twitter.com/densetsugaijin"
             target="_blank"
@@ -77,6 +77,52 @@ function App() {
             <FontAwesomeIcon
               icon={faTiktok}
               size="2xl"
+              style={{ color: "#5a6891" }}
+            />
+          </a>
+        </div>
+        <div className="links-mobile">
+          <a
+            href="https://www.twitter.com/densetsugaijin"
+            target="_blank"
+            className="external-link"
+          >
+            <FontAwesomeIcon
+              icon={faTwitter}
+              size="lg"
+              style={{ color: "#5a6891" }}
+            />
+          </a>
+          <a
+            href="https://instagram.com/densetsugaijin/"
+            target="_blank"
+            className="external-link"
+          >
+            <FontAwesomeIcon
+              icon={faInstagram}
+              size="lg"
+              style={{ color: "#5a6891" }}
+            />
+          </a>
+          <a
+            href="https://www.twitch.tv/doraques"
+            target="_blank"
+            className="external-link"
+          >
+            <FontAwesomeIcon
+              icon={faTwitch}
+              size="lg"
+              style={{ color: "#5a6891" }}
+            />
+          </a>
+          <a
+            href="https://www.tiktok.com/@densetsugaijin?_t=ZS-8xeXoIv2Xke&_r=1"
+            target="_blank"
+            className="external-link"
+          >
+            <FontAwesomeIcon
+              icon={faTiktok}
+              size="lg"
               style={{ color: "#5a6891" }}
             />
           </a>
