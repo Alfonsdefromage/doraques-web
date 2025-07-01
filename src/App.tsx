@@ -1,35 +1,92 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import densetsuLogo from "./assets/Densetsu Gaijin.png";
+import doraquesLogo from "./assets/Doraques Logo 2.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faTwitch } from "@fortawesome/free-brands-svg-icons";
+import { faTiktok } from "@fortawesome/free-brands-svg-icons";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="container">
+        <div className="YouTube">
+          <div className="buttons">
+            <div className="a7cb24">
+              <a href="https://www.youtube.com/@igoigoru" target="_blank">
+                <img
+                  src={densetsuLogo}
+                  className="logo"
+                  alt="Densetsu Gaijin logo"
+                />
+              </a>
+              <h2>Lifestyle Japan Channel </h2>
+            </div>
+            <div className="a7cb24">
+              <a href="https://www.youtube.com/@doraques" target="_blank">
+                <img
+                  src={doraquesLogo}
+                  className="logo"
+                  alt="Densetsu Gaijin logo"
+                />
+              </a>
+              <h2>Gaming Channel</h2>
+            </div>
+          </div>
+        </div>
+        <div className="links">
+          <a
+            href="https://www.twitter.com/densetsugaijin"
+            target="_blank"
+            className="external-link"
+          >
+            <FontAwesomeIcon
+              icon={faTwitter}
+              size="2xl"
+              style={{ color: "#5a6891" }}
+            />
+          </a>
+          <a
+            href="https://instagram.com/densetsugaijin/"
+            target="_blank"
+            className="external-link"
+          >
+            <FontAwesomeIcon
+              icon={faInstagram}
+              size="2xl"
+              style={{ color: "#5a6891" }}
+            />
+          </a>
+          <a
+            href="https://www.twitch.tv/doraques"
+            target="_blank"
+            className="external-link"
+          >
+            <FontAwesomeIcon
+              icon={faTwitch}
+              size="2xl"
+              style={{ color: "#5a6891" }}
+            />
+          </a>
+          <a
+            href="https://www.tiktok.com/@densetsugaijin?_t=ZS-8xeXoIv2Xke&_r=1"
+            target="_blank"
+            className="external-link"
+          >
+            <FontAwesomeIcon
+              icon={faTiktok}
+              size="2xl"
+              style={{ color: "#5a6891" }}
+            />
+          </a>
+        </div>
+        <div className="mail">
+          <h2>Buisness: contact@doraques.de</h2>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
