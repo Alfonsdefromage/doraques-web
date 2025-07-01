@@ -82,7 +82,7 @@ function App() {
           </a>
         </div>
         <div className="mail">
-          <h2>Buisness: contact@doraques.de</h2>
+          <h2>Anfragen: contact@doraques.de</h2>
         </div>
       </div>
     </>
